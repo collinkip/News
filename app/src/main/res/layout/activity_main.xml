@@ -8,6 +8,7 @@
     android:paddingTop="30dp"
     android:padding="30dp"
     tools:context=".MainActivity">
+    
 
     <Button
         android:id="@+id/button2"
