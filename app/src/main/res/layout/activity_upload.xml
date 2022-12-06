@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     tools:context=".Upload">
 
     <TextView
@@ -12,8 +15,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="Upload Content"
-        android:textSize="30sp"
         android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,8 +28,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:ems="10"
+        android:hint="Enter Title here "
         android:inputType="textPersonName"
-        android:text="Set Title"
+        android:textColor="#000000"
+        android:textColorHint="#2B2525"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,9 +39,10 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="336dp"
+        android:layout_height="173dp"
         android:layout_marginTop="72dp"
+        android:background="@drawable/imagebg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,11 +53,12 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set  Image"
         android:background="@color/teal_200"
+        android:onClick="getImage"
+        android:text="Set  Image"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
-        android:onClick="getImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
         app:layout_constraintVertical_bias="0.842" />
@@ -59,12 +67,15 @@
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:gravity="center_horizontal"
+        android:hint="Enter the Description Here"
         android:inputType="textPersonName"
-        android:text="Enter Description"
+        android:textColor="#000000"
+        android:textColorHint="#221B1B"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -72,9 +83,12 @@
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="submit"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_button"
         android:onClick="upload"
+        android:text="submit"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
